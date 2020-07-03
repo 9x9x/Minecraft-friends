@@ -23,7 +23,7 @@ bot.on('message',async message =>{
         .setTitle(`Realm Coords`)
         .setDescription(`Some Coords we have explored`)
         .setThumbnail(`${bot.user.displayAvatarURL()}`)
-        .addField('Spawn: ', 'X:2364, Y:64, Z:6065\n\n')
+        .addField('Spawn: ', 'X:2364 Y:64 Z:6065\n\n')
         .addField('Mushroom Land: ', 'X:3055 Y:73 Z:6209\n\n')
         .addField('Ice Land: ', 'X:2844 Y:63 Z:8606 \n\n')
         .addField('Mesa Biome: ', 'X:4470 Y:77 Z:11954\n\n')
