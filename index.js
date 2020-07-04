@@ -49,7 +49,7 @@ bot.on('message',async message =>{
           "Animemes",
           "Animemes",
         ]
-        let subreddit = subreddits[Math.floor(Math.random()*(subreddits.length)-1)]
+        let subreddit = subreddits[Math.floor(Math.random()*(subreddits.length))]
 
         let img = await api(subreddit);
         const embed = new Discord.MessageEmbed()
@@ -61,6 +61,27 @@ bot.on('message',async message =>{
 
       }
 
+      if(command === pfx + 'meme'){
+
+        message.channel.send(`if it didn't work try again untill it does.`);
+        let subreddits = [
+          "comedyheaven",
+          "dank",
+          "meme",
+          "memes"
+        ]
+        let subreddit = subreddits[Math.floor(Math.random()*(subreddits.length))]
+
+        let img = await api(subreddit);
+        const embed = new Discord.MessageEmbed()
+        .setTitle(`Meme`)
+        .setURL(`https://reddit.com/r/${subreddit}`)
+        .setColor(`RANDOM`)
+        .setImage(img)
+        message.channel.send(embed);
+
+
+      }
 })
 
 bot.login(process.env.token);

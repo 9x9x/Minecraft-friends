@@ -1,5 +1,5 @@
 {
-    "name": "astrails-bot",
+    "name": "minecraft-friends",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -12,7 +12,8 @@
       "discord.js": "^12.2.0",
       "jsonfile": "^6.0.1",
       "mongoose": "^5.9.19",
-      "random": "^2.2.0"
+      "random": "^2.2.0",
+      "imageapi.js": "^1.0.4"
     }
   }
   
